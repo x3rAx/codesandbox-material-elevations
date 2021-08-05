@@ -1,0 +1,265 @@
+/* Thanks to github.com/serglo for the shadows (https://gist.github.com/serglo/f9f0be9a66fd6755a0bda85f9c64e85f) */
+.elevate-0dp {
+  box-shadow: none;
+}
+
+.elevate-1dp {
+  box-shadow: 0 calc(1rem / 16) calc(1rem / 16) 0 rgba(0, 0, 0, 0.14),
+    0 calc(2rem / 16) calc(1rem / 16) calc(-1rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(1rem / 16) calc(3rem / 16) 0 rgba(0, 0, 0, 0.2);
+}
+
+.elevate-2dp {
+  box-shadow: 0 calc(2rem / 16) calc(2rem / 16) 0 rgba(0, 0, 0, 0.14),
+    0 calc(3rem / 16) calc(1rem / 16) calc(-2rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(1rem / 16) calc(5rem / 16) 0 rgba(0, 0, 0, 0.2);
+}
+
+.elevate-3dp {
+  box-shadow: 0 calc(3rem / 16) calc(4rem / 16) 0 rgba(0, 0, 0, 0.14),
+    0 calc(3rem / 16) calc(3rem / 16) calc(-2rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(1rem / 16) calc(8rem / 16) 0 rgba(0, 0, 0, 0.2);
+}
+
+.elevate-4dp {
+  box-shadow: 0 calc(4rem / 16) calc(5rem / 16) 0 rgba(0, 0, 0, 0.14),
+    0 calc(1rem / 16) calc(10rem / 16) 0 rgba(0, 0, 0, 0.12),
+    0 calc(2rem / 16) calc(4rem / 16) calc(-1rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-6dp {
+  box-shadow: 0 calc(6rem / 16) calc(10rem / 16) 0 rgba(0, 0, 0, 0.14),
+    0 calc(1rem / 16) calc(18rem / 16) 0 rgba(0, 0, 0, 0.12),
+    0 calc(3rem / 16) calc(5rem / 16) calc(-1rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-8dp {
+  box-shadow: 0 calc(8rem / 16) calc(10rem / 16) calc(1rem / 16)
+      rgba(0, 0, 0, 0.14),
+    0 calc(3rem / 16) calc(14rem / 16) calc(2rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(5rem / 16) calc(5rem / 16) calc(-3rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-9dp {
+  box-shadow: 0 calc(9rem / 16) calc(12rem / 16) calc(1rem / 16)
+      rgba(0, 0, 0, 0.14),
+    0 calc(3rem / 16) calc(16rem / 16) calc(2rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(5rem / 16) calc(6rem / 16) calc(-3rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-12dp {
+  box-shadow: 0 calc(12rem / 16) calc(17rem / 16) calc(2rem / 16)
+      rgba(0, 0, 0, 0.14),
+    0 calc(5rem / 16) calc(22rem / 16) calc(4rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(7rem / 16) calc(8rem / 16) calc(-4rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-16dp,
+.notification-area .notification-container {
+  box-shadow: 0 calc(16rem / 16) calc(24rem / 16) calc(2rem / 16)
+      rgba(0, 0, 0, 0.14),
+    0 calc(6rem / 16) calc(30rem / 16) calc(5rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(8rem / 16) calc(10rem / 16) calc(-5rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+.elevate-24dp {
+  box-shadow: 0 calc(24rem / 16) calc(38rem / 16) calc(3rem / 16)
+      rgba(0, 0, 0, 0.14),
+    0 calc(9rem / 16) calc(46rem / 16) calc(8rem / 16) rgba(0, 0, 0, 0.12),
+    0 calc(11rem / 16) calc(15rem / 16) calc(-7rem / 16) rgba(0, 0, 0, 0.2);
+}
+
+/* --- Backgrounds for dark theme ---------------------------------------------- */
+.dark .elevate-0dp {
+  background-color: rgba(255, 255, 255, 0);
+  /*     // Just for visuals: */
+  border: rgba(255, 255, 255, 0.05) solid calc(1rem / 16);
+  box-sizing: revert;
+}
+.dark .elevate-1dp {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.dark .elevate-2dp {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.dark .elevate-3dp {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.dark .elevate-4dp {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.dark .elevate-6dp {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.dark .elevate-8dp {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.dark .elevate-12dp {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+.dark .elevate-16dp,
+.dark .notification-area .notification-container,
+.notification-area .dark .notification-container {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.dark .elevate-24dp {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* --- General page style ------------------------------------------------------ */
+:root {
+  --side-len: 12rem;
+  --gap: 2rem;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 1536px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.dark,
+.light {
+  padding: var(--gap);
+}
+.dark .cards-grid,
+.light .cards-grid {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fill, var(--side-len));
+  /* Set first row to `auto` */
+  grid-template-rows: auto;
+  /* Set additional rows to `--side-len` */
+  grid-auto-rows: var(--side-len);
+  justify-content: center;
+}
+
+.dark {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+.light {
+  color: #000000;
+  background-color: #e2e1e0;
+}
+
+.light .card {
+  background: #ffffff;
+}
+
+.notification-area {
+  font-size: 0.9em;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: min(90vw, 25rem);
+}
+.notification-area .notification-container {
+  pointer-events: auto;
+  --duration: 300ms;
+  transition: box-shadow var(--duration) ease-out,
+    opacity var(--duration) ease-out, margin var(--duration) ease-out,
+    border-width var(--duration) ease-out, transform var(--duration) ease-out;
+  margin-top: 1rem;
+  opacity: 1;
+  border: 0.2rem solid #4caf50;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.notification-area .notification-container.hide-notification {
+  margin-top: 0;
+  box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
+  opacity: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  transform: scale(0, 0);
+}
+.notification-area .notification-container .notification-colapser {
+  transition: opacity var(--duration) ease-out, height var(--duration) ease-out;
+  overflow: hidden;
+  height: auto;
+}
+.notification-area
+  .notification-container
+  .notification-colapser
+  .notification {
+  padding: 0.5rem;
+}
+.notification-area
+  .notification-container
+  .notification-colapser
+  .notification
+  h6 {
+  font-size: 1em;
+  margin: 0;
+}
+.notification-area
+  .notification-container
+  .notification-colapser
+  .notification.has-content
+  h6 {
+  margin-bottom: 0.2rem;
+}
+
+.pre {
+  font-family: monospace;
+}
+
+.card {
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0;
+  margin-top: -0.4rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid currentColor;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 0.8em;
+  margin: 0;
+  margin-bottom: 0.05rem;
+  margin-top: 0.1rem;
+}
+
+.css-property {
+  font-size: 0.9em;
+  overflow: hidden;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+.css-property:hover {
+  color: #42a5f5;
+  cursor: pointer;
+}
+
+.text-secondary {
+  color: #42a5f5;
+}
+
+.hover\:text-secondary:hover {
+  color: #42a5f5;
+}
