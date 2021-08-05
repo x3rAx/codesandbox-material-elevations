@@ -7,7 +7,7 @@
 
 <script>
 import MaterialElevations from "./components/MaterialElevations";
-import NotificationArea from "./components/NotificationArea";
+import NotificationArea from "./components/notifications/NotificationArea";
 
 export default {
   components: { MaterialElevations, NotificationArea },

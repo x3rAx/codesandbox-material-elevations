@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import collapseSection from "../lib/collapseElement";
+import collapseSection from "../../lib/collapseElement";
 
 export default {
   props: {
