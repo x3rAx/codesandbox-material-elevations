@@ -1,21 +1,27 @@
-import Vue from "vue";
+<template>
+  <div
+    class="font-mono overflow-hidden overflow-ellipsis whitespace-nowrap my-0.5 text-sm"
+  >
+    {{ cssProp }}
+  </div>
+</template>
 
-export default Vue.extend({
-  template: `<div class="font-mono overflow-hidden overflow-ellipsis whitespace-nowrap my-0.5 text-sm">{{ cssProp }}</div>`,
+<script>
+export default {
   props: {
     element: {
       type: [Function],
-      default: null
+      default: null,
     },
     property: String,
     map: {
       type: Function,
-      default: (x) => x
-    }
+      default: (x) => x,
+    },
   },
   data() {
     return {
-      cssProp: ""
+      cssProp: "",
     };
   },
   mounted() {
@@ -25,5 +31,9 @@ export default Vue.extend({
     }
     const style = window.getComputedStyle(element);
     this.cssProp = this.map(style[this.property]);
-  }
-});
+  },
+};
+</script>
+
+<style lang="postcss" scoped>
+</style>

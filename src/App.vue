@@ -1,13 +1,18 @@
-import Vue from "vue";
+<template>
+  <div>
+    <MaterialElevations />
+    <NotificationArea />
+  </div>
+</template>
 
+<script>
 import MaterialElevations from "./components/MaterialElevations";
 import NotificationArea from "./components/NotificationArea";
 
-export default Vue.extend({
+export default {
   components: { MaterialElevations, NotificationArea },
-  template: `
-    <div>
-      <MaterialElevations />
-      <NotificationArea />
-    </div>`
-});
+};
+</script>
+
+<style lang="postcss" scoped>
+</style>

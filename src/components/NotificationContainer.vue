@@ -1,19 +1,23 @@
-import Vue from "vue";
+<template>
+  <div
+    class="notification-container"
+    :class="{ 'hide-notification': isHidden }"
+  >
+    <div ref="colapser" class="notification-colapser" @click="hideNotification">
+      <div class="notification" :class="{ 'has-content': hasSlot }">
+        <h6 class="font-bold">{{ title }}</h6>
+        <div v-if="hasSlot" class="notification-text"><slot /></div>
+      </div>
+    </div>
+  </div>
+</template>
 
+<script>
 import collapseSection from "../lib/collapseElement";
 
-export default Vue.extend({
-  template: `
-    <div class="notification-container" :class="{'hide-notification': isHidden}">
-      <div ref="colapser" class="notification-colapser" @click="hideNotification">
-        <div class="notification" :class="{'has-content': hasSlot}">
-          <h6 class="font-bold">{{ title }}</h6>
-          <div v-if="hasSlot" class="notification-text"><slot /></div>
-        </div>
-      </div>
-    </div>`,
+export default {
   props: {
-    title: String
+    title: String,
   },
   mounted() {
     requestAnimationFrame(() => {
@@ -25,13 +29,13 @@ export default Vue.extend({
   },
   data() {
     return {
-      isHidden: true
+      isHidden: true,
     };
   },
   computed: {
     hasSlot() {
       return this.$slots.default !== undefined;
-    }
+    },
   },
   methods: {
     hideNotification() {
@@ -42,6 +46,10 @@ export default Vue.extend({
 
     emitNotificationClosed() {
       this.$emit("notificationClosed");
-    }
-  }
-});
+    },
+  },
+};
+</script>
+
+<style lang="postcss" scoped>
+</style>
