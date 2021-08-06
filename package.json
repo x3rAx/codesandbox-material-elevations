@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "tailwindcss": "2.2.7",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.1.1",
@@ -21,7 +22,6 @@
     "eslint-plugin-vue": "^6.0.1",
     "postcss": "^7.0.36",
     "postcss-nested": "^4.2.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.6",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -29,20 +29,13 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": ["plugin:vue/essential", "eslint:recommended"],
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "keywords": [],
   "description": ""
 }
